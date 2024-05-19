@@ -8,6 +8,7 @@ import Search from "./_components/search";
 import BookingItem from "../_components/booking-item";
 import { db } from "../_lib/prisma"
 import BarbershopItem from "./_components/barbershop-item";
+import Footer from "../_components/footer";
 
 
 
@@ -39,9 +40,16 @@ const barbershops = await db.barbershop.findMany({});
           <BarbershopItem key={barbershop.id} barbershop={barbershop}/>
           ))}
         </div>
-        
-        <h2></h2>
       </div>
+      <div className="mt-6">
+        <h2 className="px-5 text-xs uppercase font-bold mb-3">Populares</h2>
+        <div className="px-5 flex gap-4 overflow-x-auto [&..-webkt-scrollbar]:hidden">
+          {barbershops.map((barbershop) => (
+          <BarbershopItem key={barbershop.id} barbershop={barbershop}/>
+          ))}
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }

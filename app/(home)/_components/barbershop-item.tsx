@@ -21,7 +21,7 @@ const BarbershopItem = ({barbershop}: BarbershopItemProps) => {
                     </Badge>
                     </div>
                     
-                    <Image alt={barbershop.name} src={barbershop.imageUrl}  style={{objectFit: "cover",}} fill className="rounded-2xl" />
+                    <Image alt={barbershop.name} src={barbershop.imageUrl}  style={{objectFit: "cover",}} fill className="rounded-2xl pt-1" />
                 </div>
                 <div className="px-3 pb-3">
                     <h2 className="font-bolt overflow-hidden text-ellipsis text-nowrap">{barbershop.name}</h2>
