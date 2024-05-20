@@ -1,5 +1,3 @@
-"use client";
-
 import { format } from "date-fns";
 import Image from "next/image";
 import Header from "../_components/header";
