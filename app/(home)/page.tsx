@@ -2,6 +2,7 @@ import { format } from "date-fns";
 import Image from "next/image";
 import Header from "../_components/header";
 import { ptBR } from "date-fns/locale";
+import Search from "./_componets/Search";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
         locale: ptBR,
       })}</p>
       </div>
+
+      <div className="px-5 mt-5">
+        <Search/>
     </div>
   );
 }
