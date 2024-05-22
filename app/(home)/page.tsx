@@ -16,8 +16,17 @@ export default function Home() {
       })}</p>
       </div>
 
-      <div className="px-5 mt-5">
-        <Search/>
+      <div className="px-5 mt-5"
+        < Search />
+      </div>
+
+      <div className="px-5 mt-6">
+        <h2 className="text-xs mb-3 uppercase text-gray-400 font-blod">Agendamentos</h2>
+        < BookingItem >
+      <div/>
+
     </div>
+
+
   );
 }
